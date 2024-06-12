@@ -1,0 +1,374 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('header_bg.jpg');
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background-image: url('menu_bg.jpg'); /* Added background image */
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a:hover {
+    background-color: #E44522;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hero_bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* Add this line */
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Add this line */
+    padding: 10px 20px; /* Add this line */
+    display: inline-block; /* Add this line */
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Add this line */
+    padding: 10px 20px; /* Add this line */
+    display: inline-block; /* Add this line */
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: rgba(255, 87, 51, 0.8); /* Adjust the alpha value as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('button_bg.jpg') center center no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.btn:hover:after {
+    top: 0;
+    left: 0;
+}
+
+.btn:hover {
+    background-color: rgba(228, 69, 34, 0.8); /* Adjust the alpha value as needed */
+}
+
+/* Main Content */
+#menu {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pizza-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.pizza:hover {
+    transform: scale(1.05);
+}
+
+.pizza img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pizza-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pizza-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pizza-info p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Order Form Section */
+#order {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#orderForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#orderForm fieldset {
+    margin-bottom: 20px;
+}
+
+#orderForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#orderForm input[type="text"],
+#orderForm input[type="email"],
+#orderForm select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#orderForm input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#orderForm input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#orderForm input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#orderForm input[type="checkbox"]:checked + label::before {
+    background-color: #FF5733;
+    border-color: #FF5733;
+    background-image: url('checkbox_check.svg');
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#orderForm button {
+    padding: 15px 30px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#orderForm button:hover {
+    background-color: #E44522;
+}
+
+/* Aside Section */
+#about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .contact-info,
+footer .social-links {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #FF5733;
+}
+
+/* Add this CSS in your style.css file */
+.background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideBackground 10s infinite;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url('pizzalogo.jpg');
+    }
+    33.33% {
+        background-image: url('pepronni.jpg');
+    }
+    66.66% {
+        background-image: url('bbq\ chicken.jpg');
+    }
+    100% {
+        background-image: url('hawai.jpg');
+    }
+}
+
+.background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideBackground 20s infinite; /* Increase the duration to slow down the animation */
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url('pizzalogo.jpg');
+    }
+    25% {
+        background-image: url('pepronni.jpg');
+    }
+    50% {
+        background-image: url('bbq\ chicken.jpg');
+    }
+    75% {
+        background-image: url('hawai.jpg');
+    }
+    100% {
+        background-image: url('pizzalogo.jpg');
+    }
+}
